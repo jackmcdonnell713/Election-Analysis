@@ -43,7 +43,7 @@ county_options = []
 county_votes = {}
 
 ```
-The county portion of the variables created could be made to represent any sort of area that is needed for one's presented information about the election.  A crucial piece of code however would be needing change, shown below, if the order of the columns in the original data was presented differently than how it was in our csv file: Ballot ID, "Location/County", Candidate. 
+The county portion of the variables created could be made to represent any sort of area that is needed for one's presented information about the election.  A simple yet exceedingly important piece of code, shown below, would need to be changed if the order of the columns in the original data was presented differently than how it was in our csv file: Ballot ID, "Location/County", Candidate. 
 
 ```
 # Get the candidate name from each row.
@@ -54,7 +54,13 @@ The county portion of the variables created could be made to represent any sort 
         
 ```
 
-Since we had referenced the candidate and county based on their index position per Python Syntax, if the orders were in anyway different than how we were given it than the corresponding number would have to change with [0] being first in left to right format so then 1, 2, 3 accordingly.  However, given the sheer size of data pools that can be appointed to election results these minor tweaks seem miniscule in the face of a script that can easily execute information about a desired variable in almost an instant!
+Since we had referenced the candidate and county based on their index position per Python Syntax, if the orders were in anyway different for the new election data than the corresponding number would have to change with [0] being first in left to right format so then 1, 2, 3 accordingly.  For example, if there was a data set in which State (voter location) was the 3rd row after ballot ID or Candidate (or another variable introduced) then extracting the State name from each row would read something like,
+```
+State_name = row[2]
+
+```
+
+However, given the sheer size of data pools that can be appointed to election results these minor tweaks seem miniscule in the face of a script that can easily execute information about a desired variable in almost an instant!  Using the script I have created, given the necessary minor adjustments, it would be wise to appropriate it to fit a slew of different kind of election data tables for the quickest and most-pain free experience on the market!
 
 
 
