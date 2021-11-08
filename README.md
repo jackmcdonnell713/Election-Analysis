@@ -23,9 +23,6 @@ There was a similarly sized spread of votes based on the Candidate chosen as wel
 
 ## Summary
 
-
-### In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
-
 The script used to get this information could be used on any number of elections!  The first step would be to have csv files that we can load information from i.e. raw data about voters that is otherwise too lengthy to interpret.  The code below allowed us to supplement our script with information from that file making it simple to present specific details:
 
 ```
@@ -61,6 +58,3 @@ State_name = row[2]
 ```
 
 However, given the sheer size of data pools that can be appointed to election results these minor tweaks seem miniscule in the face of a script that can easily execute information about a desired variable in almost an instant!  Using the script I have created, given the necessary minor adjustments, it would be wise to appropriate it to fit a slew of different kind of election data tables for the quickest and most-pain free experience on the market!
-
-
-
