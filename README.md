@@ -36,7 +36,25 @@ import os
 file_to_load = os.path.join("Resources", "election_results.csv")
 
 ```
-By first importing a csv dependency, we can easily pull data from just about any spreadsheet on any election given we replace the election_results.csv with the relevant data pool.
+By first importing a csv dependency, we can easily pull data from just about any spreadsheet on any election given we replace the election_results.csv with the relevant data pool.  We could then tweak the script in subtle ways to account for any differences in the type of election like if the regional variables weren't county but rather city, state, or even region!
+
+```
+county_options = []
+county_votes = {}
+
+```
+The county portion of the variables created could be made to represent any sort of area that is needed for one's presented information about the election.  A crucial piece of code however would be needing change, shown below, if the order of the columns in the original data was presented differently than how it was in our csv file: Ballot ID, "Location/County", Candidate. 
+
+```
+# Get the candidate name from each row.
+        candidate_name = row[2]
+
+        # 3: Extract the county name from each row.
+        county_name = row[1]
+        
+```
+
+Since we had referenced the candidate and county based on their index position per Python Syntax, if the orders were in anyway different than how we were given it than the corresponding number would have to change with [0] being first in left to right format so then 1, 2, 3 accordingly.  However, given the sheer size of data pools that can be appointed to election results these minor tweaks seem miniscule in the face of a script that can easily execute information about a desired variable in almost an instant!
 
 
 
