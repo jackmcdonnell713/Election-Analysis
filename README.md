@@ -26,5 +26,17 @@ There was a similarly sized spread of votes based on the Candidate chosen as wel
 
 ### In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
 
+The script used to get this information could be used on any number of elections!  The first step would be to have csv files that we can load information from i.e. raw data about voters that is otherwise too lengthy to interpret.  The code below allowed us to supplement our script with information from that file making it simple to present specific details:
+
+```
+
+import csv
+import os
+
+file_to_load = os.path.join("Resources", "election_results.csv")
+
+```
+By first importing a csv dependency, we can easily pull data from just about any spreadsheet on any election given we replace the election_results.csv with the relevant data pool.
+
 
 
