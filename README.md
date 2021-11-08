@@ -4,6 +4,7 @@
 
 
 ## Overview of Project
+Utilizing a .csv file given to us about voter information in a U.S election, we made use of "for loops" and "conditional statements", along with other advanced syntax, to present specific information about a local election audit.  Specifically, we were taxed with writing a Python script that, when executed, would give us a neat wall of text describing voter turnout per county and which candidate in the election recieved the greatest number of votes along with general information about most of the variables.
 
 ## Election Audit Results
 
