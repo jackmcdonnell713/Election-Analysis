@@ -1,5 +1,5 @@
 # Election-Analysis
-
+ Utilizing "for loops" and "conditional statements" along with other advanced syntax to find specific results for an election audit.
 
 
 
